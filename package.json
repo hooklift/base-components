@@ -2,6 +2,10 @@
 	"name": "@hooklift/base-components",
 	"version": "1.0.0",
 	"description": "Hooklift's shared vue components.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hooklift/base-components"
+	},
 	"main": "src/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +13,11 @@
 		"lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
 	},
 	"keywords": [],
-	"author": "Juan P. Osorio",
+	"contributors": [
+		{
+			"name": "Juan P. Osorio"
+		}
+	],
 	"license": "ISC",
 	"devDependencies": {
 		"eslint": "5.0.1",
