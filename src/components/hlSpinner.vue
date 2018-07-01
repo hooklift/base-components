@@ -1,6 +1,6 @@
 <template>
-	<div 
-		class="hl-spinner" 
+	<div
+		class="hl-spinner"
 		:class="`${variant} ${size}`">
 		<div class="hl-spinner__circle"/>
 		<div class="hl-spinner__circle hl-spinner__circle--delayed"/>

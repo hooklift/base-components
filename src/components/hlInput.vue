@@ -1,9 +1,9 @@
 <template>
 	<div class="hl-input">
 		<transition name="label">
-			<label 
-				class="label" 
-				v-show="value" 
+			<label
+				class="label"
+				v-show="value"
 				for="hl_input">{{ placeholder }}</label>
 		</transition>
 		<input
@@ -16,8 +16,8 @@
 			v-on="inputListeners"
 		>
 		<transition name="label">
-			<span 
-				class="hl-input-error" 
+			<span
+				class="hl-input-error"
 				v-show="error">{{ error }}</span>
 		</transition>
 	</div>

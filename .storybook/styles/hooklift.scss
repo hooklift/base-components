@@ -1,0 +1,63 @@
+$breakpoints: (
+	phone: 320px,
+	tablet: 768px,
+	desktop: 1024px,
+);
+
+$primary-color: rgba(24, 102, 176, 1);
+$neutral-color: #f0f0f0;
+$overlay-color: rgba(240, 240, 240, 0.3);
+$primary-color__light: #359fd8;
+$input-label-color: #555;
+$overlay-color__light: rgba(255, 255, 255, 0.55);
+$overlay-color__dark: rgba(0, 0, 0, 0.8);
+$dark-blue: rgba(10, 33, 56, 0.53);
+
+$list-line-color: rgba(255, 255, 255, 0.04);
+
+$dark-blue-text: #164d78;
+$dark-grey-box: #e0e0e1;
+$grey-border: 1px solid #c8c8c8;
+$small-radius: 0.3rem;
+
+$status-success: #7ed321;
+$status-warning: #f5a623;
+$status-error: #e64611;
+
+$vertical_gradient: linear-gradient(
+	to bottom,
+	#1865b0 1%,
+	#2885d1 43%,
+	#2887d1 46%,
+	#2889d1 49%,
+	#2889d1 52%,
+	#2887d1 55%,
+	#2885d1 58%,
+	#1865b0 90%
+);
+
+$small_spacing: 1.1rem;
+$medium_spacing: 2.2rem;
+$large_spacing: 3.3rem;
+
+$form-input: 4rem;
+
+a {
+	color: $neutral-color;
+	text-decoration: none;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+select,
+input,
+button {
+	&:focus {
+		outline: 0;
+	}
+}
+
+svg {
+	height: 100%;
+	width: 100%;
+}
