@@ -10,8 +10,9 @@
 				{{ option.label }}
 			</a>
 		</div>
-		<!-- <logo-hooklift class="smallLogo"/> -->
-		<div>LOGO</div>
+
+		<hl-icon/>
+
 		<div class="links right">
 			<a
 				v-for="option in right"
@@ -26,11 +27,11 @@
 </template>
 
 <script>
-// import logoHooklift from './hl-logo';
+import hlIcon from './hlIcon.vue';
 
 export default {
 	components: {
-		// logoHooklift,
+		hlIcon,
 	},
 	data() {
 		//TODO: Update links to static data.
@@ -102,11 +103,6 @@ a {
 	&:hover {
 		border-bottom: 1px solid;
 	}
-}
-
-.smallLogo {
-	height: 2.2rem;
-	width: 2.2rem;
 }
 
 @media (max-width: map-get($breakpoints, tablet)) {
