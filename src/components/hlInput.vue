@@ -13,6 +13,7 @@
 			v-bind="$attrs"
 			:value="value"
 			:placeholder="placeholder"
+			:autocomplete="autocomplete"
 			v-on="inputListeners"
 		>
 		<transition name="label">
@@ -45,6 +46,10 @@ export default {
 		placeholder: {
 			type: String,
 			default: '',
+		},
+		autocomplete: {
+			type: String,
+			default: 'off',
 		},
 	},
 	computed: {
