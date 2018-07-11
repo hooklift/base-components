@@ -1,0 +1,10 @@
+.tab {
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: transparent;
+	padding: 0;
+	&.active {
+		background-color: red;
+	}
+}
