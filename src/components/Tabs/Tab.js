@@ -5,16 +5,25 @@ const Tab = {
 			type: Boolean,
 			default: false,
 		},
+		index: {
+			type: Number,
+			required: true,
+		},
+	},
+	inject: ['tabClick'],
+	methods: {
+		handleClick() {
+			this.tabClick(this.index);
+		},
 	},
 	render(h) {
 		return h(
 			'button',
 			{
 				staticClass: 'tab',
-				class: {
-					active: this.isActive,
+				on: {
+					click: this.handleClick,
 				},
-				on: this.$listeners,
 			},
 			/**
 			 * We iclude scoped slots if any of the children need access to the isActive prop

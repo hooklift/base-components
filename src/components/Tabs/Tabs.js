@@ -1,4 +1,5 @@
 import './Tabs.scss';
+
 const Tabs = {
 	name: 'Tabs',
 	props: {
@@ -7,7 +8,16 @@ const Tabs = {
 			default: 0,
 		},
 	},
-
+	provide() {
+		return {
+			tabClick: this.handleTabClick,
+		};
+	},
+	methods: {
+		handleTabClick: function(i) {
+			this.$emit('change', i);
+		},
+	},
 	render(h) {
 		const children = this.$slots.default.map(vnode => {
 			if (vnode.componentOptions && vnode.componentOptions.tag) {

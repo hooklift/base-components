@@ -12,6 +12,7 @@ const TabsContainer = {
 			if (vnode.componentOptions && vnode.componentOptions.tag === 'Tab') {
 				vnode.componentOptions.propsData = {
 					isActive: this.activeIndex === index,
+					index,
 				};
 				index++;
 			}
