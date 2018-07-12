@@ -20,7 +20,13 @@ const Tab = {
 		return h(
 			'button',
 			{
-				staticClass: 'tab',
+				style: {
+					border: 'none',
+					textDecoration: 'none',
+					cursor: 'pointer',
+					backgroundColor: 'transparent',
+					padding: 0,
+				},
 				on: {
 					click: this.handleClick,
 				},
