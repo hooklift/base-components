@@ -1,5 +1,3 @@
-import './Tabs.scss';
-
 const Tabs = {
 	name: 'Tabs',
 	props: {

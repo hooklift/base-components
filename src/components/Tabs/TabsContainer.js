@@ -9,7 +9,11 @@ const TabsContainer = {
 	render(h) {
 		let index = 0;
 		const children = this.$slots.default.map(vnode => {
-			if (vnode.componentOptions && vnode.componentOptions.tag === 'Tab') {
+			if (
+				vnode.componentOptions &&
+				(vnode.componentOptions.tag === 'Tab' ||
+					vnode.componentOptions.tag === 'tab')
+			) {
 				vnode.componentOptions.propsData = {
 					isActive: this.activeIndex === index,
 					index,
