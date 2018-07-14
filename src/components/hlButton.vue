@@ -51,6 +51,7 @@ export default {
 	font-weight: bold;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 
 	&.primary {
 		background-color: $primary-color;
