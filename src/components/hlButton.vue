@@ -20,9 +20,7 @@ export default {
 		size: {
 			default: 'auto',
 			type: String,
-			validator(prop) {
-				return ['auto', 'large'].indexOf(prop) > -1;
-			},
+			validator: value => ['auto', 'large'].indexOf(value) !== -1,
 		},
 		isLoading: {
 			type: Boolean,
@@ -53,6 +51,7 @@ export default {
 	font-weight: bold;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 
 	&.primary {
 		background-color: $primary-color;
