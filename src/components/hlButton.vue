@@ -67,7 +67,6 @@ export default {
 		padding: 0 3.2rem;
 		font-size: 1.9rem;
 		height: 4.8rem;
-		line-height: 2.9375rem;
 	}
 
 	&:disabled {
