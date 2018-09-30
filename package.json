@@ -16,6 +16,7 @@
 	},
 	"files": [
 		"src/components",
+		"src/assets",
 		"src/index.js"
 	],
 	"keywords": [],
