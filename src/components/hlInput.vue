@@ -7,13 +7,13 @@
 				for="hl_input">{{ placeholder }}</label>
 		</transition>
 		<input
-			name="hl_input"
 			:type="type"
 			:class="[{hasError: Boolean(error)}]"
 			v-bind="$attrs"
 			:value="value"
 			:placeholder="placeholder"
 			:autocomplete="autocomplete"
+			:name="name"
 			v-on="inputListeners"
 		>
 		<transition name="label">
@@ -50,6 +50,11 @@ export default {
 		autocomplete: {
 			type: String,
 			default: 'off',
+		},
+		name: {
+			type: String,
+			default:'',
+			required: false,
 		},
 	},
 	computed: {
