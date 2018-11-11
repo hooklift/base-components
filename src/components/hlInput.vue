@@ -53,7 +53,7 @@ export default {
 		},
 		name: {
 			type: String,
-			default:'',
+			default: '',
 			required: false,
 		},
 	},
