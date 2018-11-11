@@ -1,0 +1,55 @@
+// @import './vars.scss';
+
+html {
+	box-sizing: border-box;
+	font-size: 10px; /* 10px = 1rem */
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	color: $neutral-color;
+	background-color: $primary-color; /* Old browsers */
+	overflow-x: hidden;
+	font-family: 'Gotham Narrow SSm', 'Helvetica Neue', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1.5;
+	text-rendering: optimizeLegibility;
+	margin: 0;
+	// background: $vertical_gradient;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+a {
+	color: $neutral-color;
+	text-decoration: none;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+select,
+input,
+button {
+	&:focus {
+		outline: 0;
+	}
+}
+
+svg {
+	height: 100%;
+	width: 100%;
+}
